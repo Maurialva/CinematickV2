@@ -18,26 +18,26 @@
 	button {
 		height: auto;
 		width: 10% ;
-		background-color: rgb(90, 29, 29);
-		border-color: #693030;
+		background-color: rgb(29, 81, 90);
+		border-color: #305769;
 		background-position: 100%;
 		background-size: 400%;
 		transition: background 900ms ease-in-out;
 		text-align: center;
-		color: rgb(0, 0, 0); 
+		color: rgb(204, 240, 238); 
 		font-size: 150%; 
 		padding: 1%; 
 		border-radius: 50px; 
-		background-image: linear-gradient(45deg,rgb(65, 9, 9) 0%, rgb(158, 80, 80) 56%, rgb(54, 12, 12) 100%); 
+		background-image: linear-gradient(45deg,rgb(9, 31, 65) 0%, rgb(80, 146, 158) 56%, rgb(56, 213, 224) 100%); 
 		vertical-align:top ;
-		border: 10% solid rgb(47, 6, 6); 
+		border: 10% solid rgb(6, 42, 47); 
 		display: inline-block;
 		cursor: pointer;
 	}
 	button:hover {
 		background-position: 0;
-		color: rgb(87, 12, 12);
-		background-image: linear-gradient(43deg,rgb(0, 0, 0) 0%, rgb(37, 26, 26) 56%, rgb(39, 4, 4) 100%); 
+		color: rgb(13, 12, 87);
+		background-image: linear-gradient(83deg,rgb(96, 47, 100) 0%, rgb(28, 166, 221) 25%, rgb(86, 152, 163) 100%); 
 		color: rgb(255, 255, 255); 
 	}
 </style>

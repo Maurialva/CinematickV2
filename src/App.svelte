@@ -6,6 +6,7 @@ import Cartelera from './Cartelera.svelte';
 import Socialicon from './Socialicon.svelte';
 import Searconteiner from './Searchconteiner.svelte';
 import Searchconteiner from './Searchconteiner.svelte';
+import Grid from './Grid.svelte';
 	
 	let src = 'logocinematick.png';
 		let namel = 'logo';
@@ -15,30 +16,12 @@ import Searchconteiner from './Searchconteiner.svelte';
 	}
 	function setpagename() {
 	location.href='login.html';
-
-	switch(pagenumber)
-	{
-	case "1": ti="CinemaTick - inicio";break;
-	case "2": ti="CinemaTick - Login";break;
-	case "3": ti="CinemaTick - Registro";break;
-	case "4": ti="CinemaTick - Sobre nosotros";break;
-	case "5": ti="CinemaTick - Contactarse";break;
-	case "6": ti="CinemaTick - Ayuda";break;
-	case "7": ti="CinemaTick - Busqueda";break;
-	case "8": ti="CinemaTick - Pelicula";break;
-	case "9": ti="CinemaTick - Seleccion de Butacas";break;
-	case "10": ti="CinemaTick - Datos de compra";break;
-	case "11": ti="CinemaTick - Error";break;
-	}
 }
 </script>
-
-<svelte:head>
-	<title>{ti}</title>
-</svelte:head>
+<Grid {pagenumber}/>
 <body>
 	<div class="grid-container">
-		<div class="item1">
+		<div class="menuhead">
 			<br>
 			<br>
 
@@ -53,20 +36,31 @@ import Searchconteiner from './Searchconteiner.svelte';
 				<CustomButton nombre="LOGIN" on:click={handleClick} /> 
 				<br><br>
 				<br>
-				</div>
-				<div class="search-container">
+			</div>
+			<div class="search-container">
 					<Searchconteiner/>
-				</div>
+			</div>
 				
 		</div>
-		<div class="item2">Menu</div>
-		<div class="item3">
-			<div id="cartelera">
+		{#if pagenumber==7}
+		<div class="menuleft"></div> 
+		{/if}
+
+		<div class="menucenter">
+		{#if pagenumber==1}
+		<div id="cartelera">
 				
-				<Cartelera/>	
-			</div>
+			<Cartelera/>	
+		</div>
+		
+
+		{/if}
+
+
+			
 		</div>  
-		<div class="item4">
+		{#if pagenumber==1 }
+		<div class="menuright">
 			<div id="suscripcion">
 				<h2>Suscribirse</h2>
 				<input type="text" placeholder="Email..." name="suscrip"  ><br>
@@ -80,7 +74,9 @@ import Searchconteiner from './Searchconteiner.svelte';
 					</figure>
 					</div>
 		</div>
-		<div class="item5">
+		{/if}
+		<div class="menufoot">
+			<br>
 			<a class="foot" href="http://localhost:5000/"> INICIO</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			<a class="foot"  href="http://localhost:5000/"> SOBRE NOSOTROS</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -88,6 +84,8 @@ import Searchconteiner from './Searchconteiner.svelte';
 			<a class="foot" href="http://localhost:5000/"> CONTACTO</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			<a class="foot" href="http://localhost:5000/"> AYUDA</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<br>
+			<br>
 		</div>
 	  </div>
 </body>
@@ -101,7 +99,7 @@ import Searchconteiner from './Searchconteiner.svelte';
 	}
 
 	h1 {
-		color: #ff3e00;
+		color: #11809c;
 		text-transform: uppercase;
 		font-size: 4em;
 		font-weight: 100;
