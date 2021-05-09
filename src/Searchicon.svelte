@@ -30,7 +30,7 @@ input[type=image]:hover
 		background-size: 80%;
        
 		transition: background 900ms ease-in-out;
-        background-color: rgb(81, 29, 90);
-		border-color: #643069;
+        background-color: #449fad;
+		
 }
 </style>

@@ -37,18 +37,19 @@ switch(pagenumber)
         'header header header header header header'
         'main main main main right right'
         'footer footer footer footer footer footer';
-      grid-gap: 1px;
-      background-color: #9acef8;
-      padding: 1px;
+      grid-gap: 1%;
+      background-color:#449fad;
+      padding: 1%;
       border-radius: 50px; 
     }
     
     .grid-container > div {
-      background-color: rgba(255, 255, 255);
+      background-color:lightgray;
       text-align: center;
-      padding: 1px;
+      padding: 1%;
       border-radius: 50px; 
       border-color: aqua;
+      
       
     }
     </style>
@@ -69,18 +70,19 @@ switch(pagenumber)
         'header header header header header header'
         'menu menu main main main main'
         'footer footer footer footer footer footer';
-      grid-gap: 1px;
-      background-color: #9acef8;
-      padding: 1px;
+        grid-gap: 1%;
+      background-color:linear-gradient(45deg,rgb(9, 31, 65) 0%, rgb(80, 146, 158) 56%, rgb(56, 213, 224) 100%);
+      padding: 1%;
       border-radius: 50px; 
     }
     
     .grid-container > div {
-      background-color: rgba(255, 255, 255);
+      background-color:lightgray;
       text-align: center;
-      padding: 1px;
+      padding: 1%;
       border-radius: 50px; 
       border-color: aqua;
+      
       
     }
     </style>
@@ -100,19 +102,21 @@ switch(pagenumber)
         'header header header header header header'
         'main main main main main main'
         'footer footer footer footer footer footer';
-      grid-gap: 1px;
-      background-color: #9acef8;
-      padding: 1px;
+        grid-gap: 1%;
+      background-color:linear-gradient(45deg,rgb(9, 31, 65) 0%, rgb(80, 146, 158) 56%, rgb(56, 213, 224) 100%);
+      padding: 1%;
       border-radius: 50px; 
     }
     
     .grid-container > div {
-      background-color: rgba(255, 255, 255);
+      background-color:lightgray;
       text-align: center;
-      padding: 1px;
+      padding: 1%;
       border-radius: 50px; 
       border-color: aqua;
       
+      
+    
     }
     </style>
 {/if}
