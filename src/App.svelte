@@ -1,6 +1,6 @@
 <script>
 
-let pagenumber="4";
+let pagenumber="1";
 let ti="CinemaTick - inicio";
 import CustomButton from './CustomButton.svelte';
 import Cartelera from './Cartelera.svelte';
@@ -13,11 +13,13 @@ import Login from './Login.svelte';
 import Customhead from './Customhead.svelte';
 import Register from './Register.svelte';
 import Aboutus from './Aboutus.svelte';
+import Contacto from './Contacto.svelte';
+import Ayuda from './Ayuda.svelte';
 
 
 	
 function clickbutton() {
-	pagenumber="2";
+
 }		
 
 </script>
@@ -68,6 +70,11 @@ function clickbutton() {
 		<Register/>
 		{:else if pagenumber==4}
 		<Aboutus/>
+		{:else if pagenumber==5}
+		<Contacto/>
+		{:else if pagenumber==6}
+		<Ayuda/>
+
 		{/if}
 
 		</div>  
@@ -76,7 +83,7 @@ function clickbutton() {
 			<div id="suscripcion">
 				<h1>Suscribirse</h1>
 			<Customtextinput texto="EMAIL..." txnom="suscripcion"/>
-				<CustomButton class="suscripcion" on:click={()=>console.log("Clicked")}>
+				<CustomButton class="suscripcion" on:click={clickbutton()}>
 					SUSCRIBIRSE
 				</CustomButton>
 					</div>

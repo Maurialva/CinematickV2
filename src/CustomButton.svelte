@@ -114,6 +114,26 @@
 		cursor: pointer;
 		
 	}
+	.ayuda
+	{
+		height: auto;
+		width: 70% ;
+		background-color: rgb(14, 48, 54);
+		border-color: #305769;
+		background-position: 100%;
+		background-size: 400%;
+		transition: background 400ms ease-in-out;
+		text-align: center;
+		color: rgb(255, 255, 255); 
+		font-size: 150%; 
+		padding: 1%; 
+		border-radius: 50px; 
+		background-image: linear-gradient(180deg,rgb(28, 22, 98) 0%, rgb(28, 166, 221) 60%, rgb(42, 110, 122) 100%); 
+		vertical-align:top ;
+		
+		display: inline-block;
+		cursor: pointer;
+	}
 
 	button:hover {
 		

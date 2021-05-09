@@ -4,7 +4,9 @@ import CustomButton from './CustomButton.svelte';
 import Socialicon from './Socialicon.svelte';
 import Searchconteiner from './Searchconteiner.svelte';
 
+
 function clickbutton() {
+  
 	
 }	
 </script>
