@@ -9,18 +9,14 @@ import Customtextinput from './Customtextinput.svelte';
 import Searchconteiner from './Searchconteiner.svelte';
 import Grid from './Grid.svelte';
 import Customfigure from './Customfigure.svelte';
-
+import Login from './Login.svelte';
+import Customhead from './Customhead.svelte';
 
 
 	
-	let src = 'logocinematickv2.png';
-		let namel = 'logo';
-
 function clickbutton() {
 	pagenumber="2";
 }		
-
-
 
 </script>
 <Grid {pagenumber} {ti}/>
@@ -30,11 +26,12 @@ function clickbutton() {
 	<div class="grid-container">
 		<div class="menuhead">
 	
-
+			<Customhead/>
+			<!-- 
 			<div align="right">
-				<!-- {src} is short for src={src} -->
+				 
 				
-				<img align="left" {src} alt="{namel}" class="logo"  width="16%" vertical-align="top" >
+				<img align="left" src='logocinematickv2.png' alt="logo" class="logo"  width="16%" vertical-align="top" >
 				
 				
 		
@@ -47,10 +44,13 @@ function clickbutton() {
 				</CustomButton>
 				
 			</div>
-			<h2>Bienvenido a CinemaTick&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+			
+				<h2>Todas las peliculas en un lugar, cinematick&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+			
+			
 			<div class="search-container">
 					<Searchconteiner/>
-			</div>	
+			</div>	-->
 		</div>
 		{#if pagenumber==7}
 		<div class="menuleft"></div> 
@@ -60,7 +60,10 @@ function clickbutton() {
 		<div id="cartelera">
 			<Cartelera/>	
 		</div>
+		{:else if pagenumber==2}
+		<Login/>
 		{/if}
+
 		</div>  
 		{#if pagenumber==1 }
 		<div class="menuright">
@@ -78,7 +81,8 @@ function clickbutton() {
 		</div>
 		{/if}
 		<div class="menufoot">
-			<br>
+			
+			<h3>
 			<a class="foot" href="#?ti=1" style="text-shadow:0px 4px 6px rgba(0,0,0,0.76) ;"> INICIO</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			<a class="foot"  href="http://localhost:5000/"  style="text-shadow:0px 4px 6px rgba(0,0,0,0.76) ;"> SOBRE NOSOTROS</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -86,8 +90,8 @@ function clickbutton() {
 			<a class="foot" href="http://localhost:5000/" style="text-shadow:0px 4px 6px rgba(0,0,0,0.76) ;"> CONTACTO</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			<a class="foot" href="http://localhost:5000/" style="text-shadow:0px 4px 6px rgba(0,0,0,0.76) ;"> AYUDA</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<br>
-			<br>
+			
+			<br></h3>
 		</div>
 	  </div>
 </body>
@@ -128,14 +132,8 @@ function clickbutton() {
 			max-width: none;
 		}
 	}
-	.search-container
-	{
-		text-align: center;
-		width: 100%;
-		background-image:  linear-gradient(180deg,rgb(9, 31, 65) 0%, rgb(80, 146, 158) 56%, rgb(56, 213, 224) 100%);
-		border-radius: 50px;
-		
-	}
+
+	
 	.menufoot
 	{
 		text-align: center;

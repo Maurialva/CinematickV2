@@ -19,7 +19,7 @@ export let texto,txnom;
 		color: rgb(255, 255, 255); 
 		border-radius: 50px; 
 		width:80%;
-        font-size: larger;
+        font-size: 150%;
 		}
 	
 	input:focus {  border-image: #000000; 

@@ -71,7 +71,7 @@ switch(pagenumber)
         'menu menu main main main main'
         'footer footer footer footer footer footer';
         grid-gap: 1%;
-      background-color:linear-gradient(45deg,rgb(9, 31, 65) 0%, rgb(80, 146, 158) 56%, rgb(56, 213, 224) 100%);
+      background-color:#449fad;
       padding: 1%;
       border-radius: 50px; 
     }
@@ -103,7 +103,7 @@ switch(pagenumber)
         'main main main main main main'
         'footer footer footer footer footer footer';
         grid-gap: 1%;
-      background-color:linear-gradient(45deg,rgb(9, 31, 65) 0%, rgb(80, 146, 158) 56%, rgb(56, 213, 224) 100%);
+      background-color:#449fad;
       padding: 1%;
       border-radius: 50px; 
     }

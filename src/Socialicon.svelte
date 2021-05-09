@@ -25,7 +25,7 @@
     }
     
 </script>
-<a  href={dir}> <img  class= "socialicon"  src={scr} alt={nombre} height="" width="4%"></a>
+<a  href={dir}> <img  class= "socialicon"  src={scr} alt={nombre} height="" width="4%" border-align=top ></a>
 
 <style>
    
