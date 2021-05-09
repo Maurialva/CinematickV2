@@ -91,9 +91,11 @@
 		
 		display: inline-block;
 		cursor: pointer;
+		
 	}
 
 	button:hover {
+		
 		background-position: 0;
 		background-image: linear-gradient(83deg,rgb(28, 22, 98) 0%, rgb(28, 166, 221) 25%, rgb(86, 152, 163) 100%); 
 		color: rgb(255, 255, 255); 
