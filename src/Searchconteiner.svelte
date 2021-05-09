@@ -27,7 +27,7 @@ import Searchicon from './Searchicon.svelte';
 		color: rgb(255, 255, 255); 
 		border-radius: 50px; 
 		width:80%;
-        font-size: 150%;
+        font-size: 120%;
 		}
 	
 	input:focus {  border-image: #000000; 

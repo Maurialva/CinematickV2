@@ -112,7 +112,7 @@ function clickbutton() {
 		text-transform: uppercase;
 		font-family: 'Tahoma', cursive;
 		text-align: center;
-		font-size: 250%;
+		font-size: 230%;
 		font-weight: 1;
 		text-shadow:0px 5px 10px rgba(41, 39, 39, 0.76) ;
 	}

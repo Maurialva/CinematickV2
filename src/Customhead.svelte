@@ -23,12 +23,12 @@ function clickbutton() {
             LOGIN
         </CustomButton>
          </div>
-         <h1>el mejor cine a un click de distancia &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <h2>el mejor cine a un click de distancia &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;
-         </h1> </td>
+            
+         </h2> </td>
     </tr>
     <tr>
         <td colspan="2">
