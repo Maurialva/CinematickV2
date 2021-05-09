@@ -4,9 +4,12 @@ let pagenumber="1";
 import CustomButton from './CustomButton.svelte';
 import Cartelera from './Cartelera.svelte';
 import Socialicon from './Socialicon.svelte';
-import Searconteiner from './Searchconteiner.svelte';
+import Customtextinput from './Customtextinput.svelte';
 import Searchconteiner from './Searchconteiner.svelte';
 import Grid from './Grid.svelte';
+import App from '../../pagina_mauri_muestra/src/App.svelte';
+import ButtonSubscribe from '../../pagina_mauri_muestra/src/ButtonSubscribe.svelte';
+import Searchicon from './Searchicon.svelte';
 	
 	let src = 'logocinematickv2.png';
 		let namel = 'logo';
@@ -23,25 +26,25 @@ import Grid from './Grid.svelte';
 <body>
 	<div class="grid-container">
 		<div class="menuhead">
-			<br>
-			<br>
+	
 
 			<div align="right">
 				<!-- {src} is short for src={src} -->
 				
 				<img align="left" {src} alt="{namel}" class="logo"  width="16%" vertical-align="top" >
-				<br>
-			<br>
+				
+				
+		
+			
 				<Socialicon nombre={"Instagram"}/> 
 				<Socialicon nombre={"Facebook"}/> 
 				<Socialicon nombre={"Twitter"}/> 
 				<CustomButton class="login" on:click={()=>console.log("Clicked")}>
 					LOGIN
 				</CustomButton>
-			
+				
 			</div>
-			<br>
-			<br>
+			<h2>Bienvenido a CinemaTick&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
 			<div class="search-container">
 					<Searchconteiner/>
 			</div>	
@@ -60,7 +63,7 @@ import Grid from './Grid.svelte';
 		<div class="menuright">
 			<div id="suscripcion">
 				<h1>Suscribirse</h1>
-				<input type="text" placeholder="Email..." name="suscrip"  ><br>
+			<Customtextinput texto="EMAIL..." txnom="suscripcion"/>
 				<CustomButton class="suscripcion" on:click={()=>console.log("Clicked")}>
 					SUSCRIBIRSE
 				</CustomButton>
@@ -103,11 +106,18 @@ import Grid from './Grid.svelte';
 		color: #449fad;
 		text-transform: uppercase;
 		font-family: 'Tahoma', cursive;
-		
+		text-align: center;
 		font-size: 330%;
-		font-weight: 100;
+		font-weight: 1;
 	}
-	
+	:global(h2){
+		color: #3c9baa;
+		text-transform: uppercase;
+		font-family: 'Tahoma', cursive;
+		text-align: center;
+		font-size: 100%;
+		
+	}
 
 	@media (min-width: 640px) {
 		main {

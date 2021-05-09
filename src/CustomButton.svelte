@@ -29,7 +29,7 @@
 		border-radius: 50px; 
 		background-image: linear-gradient(45deg,rgb(9, 31, 65) 0%, rgb(80, 146, 158) 56%, rgb(56, 213, 224) 100%); 
 		vertical-align:top ;
-		border: 10% solid rgb(6, 42, 47); 
+	
 		display: inline-block;
 		cursor: pointer;
 	}
@@ -48,7 +48,7 @@
 		border-radius: 50px; 
 		background-image: linear-gradient(45deg,rgb(9, 31, 65) 0%, rgb(80, 146, 158) 56%, rgb(56, 213, 224) 100%); 
 		vertical-align:top ;
-		border: 10% solid rgb(6, 42, 47); 
+		
 		display: inline-block;
 		cursor: pointer;
 	}

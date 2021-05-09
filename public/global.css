@@ -36,7 +36,7 @@ input, button, select, textarea {
 	padding: 0.4em;
 	margin: 0 0 0.5em 0;
 	box-sizing: border-box;
-	border: 1px solid #ccc;
+	border: none;
 	border-radius: 2px;
 }
 
@@ -46,7 +46,7 @@ input:disabled {
 
 button {
 	color: #333;
-	background-color: #f4f4f4;
+	background-color: #94ece5;
 	outline: none;
 }
 
@@ -60,4 +60,20 @@ button:not(:disabled):active {
 
 button:focus {
 	border-color: #666;
+}
+h1{
+	color: #449fad;
+	text-transform: uppercase;
+	font-family: 'Tahoma', cursive;
+	text-align: center;
+	font-size: 330%;
+	font-weight: 1;
+}
+h2{
+	color: #449fad;
+	text-transform: uppercase;
+	font-family: 'Tahoma', cursive;
+	text-align: center;
+	font-size: 100%;
+	
 }

@@ -2,7 +2,7 @@
 import Searchicon from './Searchicon.svelte';
 </script>
 
-<br>
+<br><br>
 					<form action="http://localhost:5000/">
 						
 					<input type="text" placeholder="Buscar..." name="searchbar"  >
