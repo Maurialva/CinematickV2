@@ -3,7 +3,7 @@
    let image="/icon_search1h.png";
    
 </script>
-<input type="image" src="icon_search1.png" onmouseover='./icon_search1h.png' onmouseout="icon_search1.png" alt="Submit"  />
+<input type="image" src="icon_search1.png" alt="Submit"  />
 
 <style>
 input[type=image]{

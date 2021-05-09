@@ -8,8 +8,8 @@
         case "Instagram": 
         {
             dir= "https://www.instagram.com/explore/tags/jamon/";
-            scr="logo_instagram.png" ;
-            scr2="logo_instagramh.png" ;
+            scr='/logo_instagram.png' ;
+            scr2='logo_instagramh.png' ;
         } break;
         case "Facebook":
         {
@@ -25,6 +25,18 @@
     }
     
 </script>
-<a  href={dir}> <img  class= "socialicon" src={scr} onmouseover={scr2} onmouseout={scr}  alt={nombre} height="60" width="60"></a>
+<a  href={dir}> <img  class= "socialicon"  src={scr} alt={nombre} height="" width="4%"></a>
 
+<style>
+   
+    a:hover
+    {
+       
+       border-radius: 50px;
+       border:3px solid lightgray;      
+      
+    }
+
+
+</style>
 

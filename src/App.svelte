@@ -1,27 +1,29 @@
 <script>
-let ti="CinemaTick - inicio";
+
 let pagenumber="1";
+let ti="CinemaTick - inicio";
 import CustomButton from './CustomButton.svelte';
 import Cartelera from './Cartelera.svelte';
 import Socialicon from './Socialicon.svelte';
 import Customtextinput from './Customtextinput.svelte';
 import Searchconteiner from './Searchconteiner.svelte';
 import Grid from './Grid.svelte';
-import App from '../../pagina_mauri_muestra/src/App.svelte';
-import ButtonSubscribe from '../../pagina_mauri_muestra/src/ButtonSubscribe.svelte';
-import Searchicon from './Searchicon.svelte';
+
+
+
 	
 	let src = 'logocinematickv2.png';
 		let namel = 'logo';
-	function handleClick() 
-	{
-		ti="2";
-	}
-	function setpagename() {
-	location.href='login.html';
-}
+
+function clickbutton() {
+	pagenumber="2";
+}		
+
+
+
 </script>
-<Grid {pagenumber}/>
+<Grid {pagenumber} {ti}/>
+
 <main>
 <body>
 	<div class="grid-container">
@@ -39,7 +41,7 @@ import Searchicon from './Searchicon.svelte';
 				<Socialicon nombre={"Instagram"}/> 
 				<Socialicon nombre={"Facebook"}/> 
 				<Socialicon nombre={"Twitter"}/> 
-				<CustomButton class="login" on:click={()=>console.log("Clicked")}>
+				<CustomButton class="login" on:click={()=>clickbutton()} >
 					LOGIN
 				</CustomButton>
 				
@@ -79,7 +81,7 @@ import Searchicon from './Searchicon.svelte';
 		{/if}
 		<div class="menufoot">
 			<br>
-			<a class="foot" href="http://localhost:5000/"> INICIO</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a class="foot" href="#?ti=1"> INICIO</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			<a class="foot"  href="http://localhost:5000/"> SOBRE NOSOTROS</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -107,7 +109,7 @@ import Searchicon from './Searchicon.svelte';
 		text-transform: uppercase;
 		font-family: 'Tahoma', cursive;
 		text-align: center;
-		font-size: 330%;
+		font-size: 250%;
 		font-weight: 1;
 	}
 	:global(h2){
@@ -115,8 +117,7 @@ import Searchicon from './Searchicon.svelte';
 		text-transform: uppercase;
 		font-family: 'Tahoma', cursive;
 		text-align: center;
-		font-size: 100%;
-		
+		font-size: 150%;		
 	}
 
 	@media (min-width: 640px) {

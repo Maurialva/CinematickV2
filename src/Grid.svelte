@@ -1,7 +1,7 @@
 
 <script>
 export let pagenumber;
-let ti;
+export let ti;
 switch(pagenumber)
 	{
 	case "1": ti="CinemaTick - inicio";break;
