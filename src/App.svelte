@@ -8,6 +8,7 @@ import Socialicon from './Socialicon.svelte';
 import Customtextinput from './Customtextinput.svelte';
 import Searchconteiner from './Searchconteiner.svelte';
 import Grid from './Grid.svelte';
+import Customfigure from './Customfigure.svelte';
 
 
 
@@ -72,22 +73,19 @@ function clickbutton() {
 					</div>
 					<div id="destacada">
 						<h2>destacada</h2>
-						<figure >
-						<a href="https://www.instagram.com/"> <img class="destacada" src="p_sample.jpg" alt="Instagram" height="300" width=""></a>
-						<figcaption>TITULO</figcaption>
-					</figure>
+					<Customfigure figname="TITULO"/>
 					</div>
 		</div>
 		{/if}
 		<div class="menufoot">
 			<br>
-			<a class="foot" href="#?ti=1"> INICIO</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+			<a class="foot" href="#?ti=1" style="text-shadow:0px 4px 6px rgba(0,0,0,0.76) ;"> INICIO</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<a class="foot"  href="http://localhost:5000/"> SOBRE NOSOTROS</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a class="foot"  href="http://localhost:5000/"  style="text-shadow:0px 4px 6px rgba(0,0,0,0.76) ;"> SOBRE NOSOTROS</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<a class="foot" href="http://localhost:5000/"> CONTACTO</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a class="foot" href="http://localhost:5000/" style="text-shadow:0px 4px 6px rgba(0,0,0,0.76) ;"> CONTACTO</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<a class="foot" href="http://localhost:5000/"> AYUDA</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a class="foot" href="http://localhost:5000/" style="text-shadow:0px 4px 6px rgba(0,0,0,0.76) ;"> AYUDA</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			<br>
 			<br>
 		</div>
@@ -106,18 +104,23 @@ function clickbutton() {
 
 	:global(h1){
 		color: #449fad;
+		color: #ffffff;
 		text-transform: uppercase;
 		font-family: 'Tahoma', cursive;
 		text-align: center;
 		font-size: 250%;
 		font-weight: 1;
+		text-shadow:0px 5px 10px rgba(41, 39, 39, 0.76) ;
 	}
 	:global(h2){
-		color: #3c9baa;
+		color: #ffffff;
 		text-transform: uppercase;
 		font-family: 'Tahoma', cursive;
 		text-align: center;
-		font-size: 150%;		
+		font-size: 200%;	
+		text-shadow:0px 5px 10px rgba(41, 39, 39, 0.76) ;
+		font-weight: 1;
+
 	}
 
 	@media (min-width: 640px) {
