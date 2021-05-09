@@ -85,7 +85,7 @@
 	</tr>
 	<tr>
 	<td><Customfigure figname="TITULO"/></td>
-	<td><Customfigure figname="TITULO"/></td>
+	<td><Customfigure figname= "TITULO"/></td>
 	<td><Customfigure figname="TITULO"/></td>
 	</tr>
 	<tr>

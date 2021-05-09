@@ -93,6 +93,27 @@
 		cursor: pointer;
 		
 	}
+	.r_register
+	{
+		height: auto;
+		width: 50% ;
+		background-color: rgb(29, 81, 90);
+		border-color: #305769;
+		background-position: 100%;
+		background-size: 400%;
+		transition: background 900ms ease-in-out;
+		text-align: center;
+		color: rgb(255, 255, 255); 
+		font-size: 150%; 
+		padding: 1%; 
+		border-radius: 50px; 
+		background-image: linear-gradient(45deg,rgb(9, 31, 65) 0%, rgb(80, 146, 158) 56%, rgb(56, 213, 224) 100%); 
+		vertical-align:top ;
+		
+		display: inline-block;
+		cursor: pointer;
+		
+	}
 
 	button:hover {
 		

@@ -1,6 +1,6 @@
 <script>
 
-let pagenumber="1";
+let pagenumber="4";
 let ti="CinemaTick - inicio";
 import CustomButton from './CustomButton.svelte';
 import Cartelera from './Cartelera.svelte';
@@ -11,6 +11,8 @@ import Grid from './Grid.svelte';
 import Customfigure from './Customfigure.svelte';
 import Login from './Login.svelte';
 import Customhead from './Customhead.svelte';
+import Register from './Register.svelte';
+import Aboutus from './Aboutus.svelte';
 
 
 	
@@ -62,6 +64,10 @@ function clickbutton() {
 		</div>
 		{:else if pagenumber==2}
 		<Login/>
+		{:else if pagenumber==3}
+		<Register/>
+		{:else if pagenumber==4}
+		<Aboutus/>
 		{/if}
 
 		</div>  
