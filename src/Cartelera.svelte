@@ -1,6 +1,8 @@
 	<script>
 		import Customfigure from './Customfigure.svelte';
 	</script>
+
+	<!-- 
 <div class="grid-container">
 	<div class="title"><h1>Cartelera</h1></div>
 
@@ -73,3 +75,28 @@
 	}
    
 				</style>
+-->
+<table>
+	<tbody>
+	<tr>
+	<td><h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1></td>
+	<td><h1>Cartelera</h1></td>
+	<td><h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1></td>
+	</tr>
+	<tr>
+	<td><Customfigure figname="TITULO"/></td>
+	<td><Customfigure figname="TITULO"/></td>
+	<td><Customfigure figname="TITULO"/></td>
+	</tr>
+	<tr>
+	<td><Customfigure figname="TITULO"/></td>
+	<td><Customfigure figname="TITULO"/></td>
+	<td><Customfigure figname="TITULO"/></td>
+	</tr>
+	<tr>
+	<td><Customfigure figname="TITULO"/></td>
+	<td><Customfigure figname="TITULO"/></td>
+	<td><Customfigure figname="TITULO"/></td>
+	</tr>
+	</tbody>
+	</table>
