@@ -1,6 +1,6 @@
 <script>
 
-let pagenumber="10";
+let pagenumber="1";
 let ti="CinemaTick - inicio";
 import CustomButton from './CustomButton.svelte';
 import Cartelera from './Cartelera.svelte';
