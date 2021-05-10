@@ -1,6 +1,6 @@
 <script>
 
-let pagenumber="1";
+let pagenumber="10";
 let ti="CinemaTick - inicio";
 import CustomButton from './CustomButton.svelte';
 import Cartelera from './Cartelera.svelte';
@@ -15,6 +15,7 @@ import Register from './Register.svelte';
 import Aboutus from './Aboutus.svelte';
 import Contacto from './Contacto.svelte';
 import Ayuda from './Ayuda.svelte';
+import Compra from './Compra.svelte';
 
 
 	
@@ -74,6 +75,9 @@ function clickbutton() {
 		<Contacto/>
 		{:else if pagenumber==6}
 		<Ayuda/>
+		{:else if pagenumber==10}
+		<Compra/>
+
 
 		{/if}
 
